@@ -3,6 +3,7 @@ Photo Cloud using Telegram API
 
 ### Important Tasks
 
+- [ ] Add photo upload resource
 - [ ] Add auth error handler
 - [ ] Add profile screen
 - [ ] Mobile. Build Android

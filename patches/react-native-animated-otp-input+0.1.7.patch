@@ -1,0 +1,21 @@
+diff --git a/node_modules/react-native-animated-otp-input/src/index.tsx b/node_modules/react-native-animated-otp-input/src/index.tsx
+index 9d775df..bd8416c 100644
+--- a/node_modules/react-native-animated-otp-input/src/index.tsx
++++ b/node_modules/react-native-animated-otp-input/src/index.tsx
+@@ -10,6 +10,7 @@ import Animated, {
+   withTiming,
+ } from 'react-native-reanimated';
+ import { type IOtpContext, type IOtpInput } from './Type';
++import {BottomSheetTextInput} from "@gorhom/bottom-sheet";
+ 
+ const { width } = Dimensions.get('window');
+ 
+@@ -63,7 +64,7 @@ const OtpItem = ({ i }: { i: number }) => {
+ 
+   return (
+     <View key={i} style={[containerStyle]}>
+-      <TextInput
++      <BottomSheetTextInput
+         style={[styles.inputSize, inputStyle]}
+         caretHidden
+         keyboardType="number-pad"

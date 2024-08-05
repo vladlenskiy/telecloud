@@ -18,9 +18,12 @@ module.exports = {
         ],
         alias: {
           '@src': './src',
+          '@ud-ui': './src/modules/ud-ui/components',
           '@styles': './src/styles',
         },
       },
     ],
+    ['@babel/plugin-transform-private-methods', { loose: true }],
+    'react-native-reanimated/plugin',
   ],
 };

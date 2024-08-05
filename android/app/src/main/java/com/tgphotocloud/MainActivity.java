@@ -3,6 +3,7 @@ package com.tgphotocloud;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
+import android.os.Bundle;
 
 public class MainActivity extends ReactActivity {
 
@@ -13,6 +14,11 @@ public class MainActivity extends ReactActivity {
   @Override
   protected String getMainComponentName() {
     return "TgPhotoCloud";
+  }
+
+  @Override
+    protected void onCreate(Bundle savedInstanceState) {
+      super.onCreate(null);
   }
 
   /**
@@ -38,11 +44,11 @@ public class MainActivity extends ReactActivity {
       return reactRootView;
     }
 
-    @Override
-    protected boolean isConcurrentRootEnabled() {
-      // If you opted-in for the New Architecture, we enable Concurrent Root (i.e. React 18).
-      // More on this on https://reactjs.org/blog/2022/03/29/react-v18.html
-      return BuildConfig.IS_NEW_ARCHITECTURE_ENABLED;
-    }
+//     @Override
+//     protected boolean isConcurrentRootEnabled() {
+//       // If you opted-in for the New Architecture, we enable Concurrent Root (i.e. React 18).
+//       // More on this on https://reactjs.org/blog/2022/03/29/react-v18.html
+//       return BuildConfig.IS_NEW_ARCHITECTURE_ENABLED;
+//     }
   }
 }

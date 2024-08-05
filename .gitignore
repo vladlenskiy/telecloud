@@ -65,3 +65,7 @@ buck-out/
 .bundle
 .github
 .husky
+/web/dist
+
+# Secret file
+.env
